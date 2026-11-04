@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="독립 디자이너의 브랜딩, 웹디자인, 상세페이지와 비주얼 콘텐츠 포트폴리오. 프로젝트 의뢰를 환영합니다."
+      name="description"
+    />
+    <meta content="#f6f3ef" name="theme-color" />
+    <title>WORKS — YOUR NAME Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="is-works-page">
+    <a class="skip" href="#main">본문 바로가기</a>
+    <header class="site-header">
+      <a aria-label="홈으로" class="wordmark" href="index.html#home"
+        >YUJIN<span class="mark-dot">.</span></a
+      >
+      <nav aria-label="주 메뉴" class="nav" id="nav">
+        <a data-nav="home" href="index.html#home">HOME</a
+        ><a data-nav="works" href="works.html">WORKS</a
+        ><a data-nav="about" href="index.html#about">ABOUT</a
+        ><a class="nav-contact" data-nav="contact" href="index.html#contact"
+          >CONTACT ↗</a>
+      </nav>
+      <button
+        aria-controls="nav"
+        aria-expanded="false"
+        aria-label="메뉴 열기"
+        class="menu-toggle"
+        type="button"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <main id="main">
+      <section class="works-hero section" id="works-top">
+        <p class="eyebrow">PORTFOLIO / ALL PROJECTS</p>
+        <h1>All <em>Works.</em></h1>
+        <p class="works-hero-desc">
+          브랜딩부터 웹, 콘텐츠와 편집 디자인까지. 다양한 프로젝트를 살펴보세요.
+        </p>
+      </section>
+      <section class="section works-section all-works-section" id="works">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">PROJECT ARCHIVE</p>
+            <h2>Explore <em>Projects.</em></h2>
+          </div>
+          <p>카테고리를 선택해 원하는 작업을 살펴보세요.</p>
+        </div>
+        <div aria-label="작업물 분류" class="filters" id="filters">
+          <button aria-pressed="true" class="active" data-filter="All">
+            ALL <span id="count"></span></button
+          ><button data-filter="DETAIL PAGE">DETAIL PAGE</button
+          ><button data-filter="PRINT DESIGN">PRINT DESIGN</button
+          ><button data-filter="BRAND IDENTITY">BRAND IDENTITY</button
+          ><button data-filter="DIGITAL CONTENTS">DIGITAL CONTENTS</button>
+        </div>
+        <div class="work-grid" id="workGrid"></div>
+        <div class="selected-actions">
+          <a class="all-works-link" href="index.html#contact"
+            >START A PROJECT ↗</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <span>YUJIN<span class="mark-dot">.</span></span
+        ><a href="index.html#home">BACK TO TOP ↑</a>
+      </div>
+      <div class="footer-bottom">
+        <p>Independent designer · Open for collaboration</p>
+        <p>© <span id="year"></span> YUJIN. All rights reserved.</p>
+      </div>
+    </footer>
+    <dialog class="project-dialog" id="projectDialog">
+      <button aria-label="닫기" class="dialog-close" id="closeProject">
+        ✕
+      </button>
+      <div id="projectDialogBody"></div>
+    </dialog>
+    <dialog class="privacy-dialog" id="privacyDialog">
+      <button aria-label="닫기" class="dialog-close" id="closePrivacy">
+        ✕
+      </button>
+      <h3>개인정보 수집 및 이용 안내</h3>
+      <p>
+        수집 항목: 이름/업체명, 이메일, 문의 내용 및 선택 기입 사항(예산·일정).
+      </p>
+      <p>이용 목적: 프로젝트 상담 및 회신.</p>
+      <p>
+        보유 기간: 답변 완료 후 최대 1년 또는 동의 철회·삭제 요청 시까지.
+        Formspree 서비스의 보관·처리 정책도 확인해 주세요.
+      </p>
+      <p>
+        동의를 거부할 수 있으나, 동의하지 않으면 문의 양식을 이용할 수 없습니다.
+      </p>
+      <p>운영자: YOUR NAME / 연락처: 사이트 운영 전 실제 이메일 기재 필요</p>
+    </dialog>
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
