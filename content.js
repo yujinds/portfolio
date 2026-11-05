@@ -214,7 +214,7 @@ const PROJECTS = [
   {
     id: 13,
     featured: false,
-    title: "기초화장품 브랜드\nSNS 메타소재",
+    title: "기초화장품 SNS 메타소재",
     category: "DIGITAL CONTENTS",
     year: "2026",
     role: "SNS META",
