@@ -31,42 +31,48 @@ const PROJECTS = [
       return `assets/detail01/SKAB_${fileName}.${ext}`;
     }),
   },
-  // {
-  //   id: 2,
-  //   featured: false,
-  //   title: "우동 포차 메뉴판",
-  //   category: "PRINT DESIGN",
-  //   year: "2026",
-  //   role: "Restaurant business / MENU",
-  //   description:
-  //     "포차 감성에",
-  //   cover: "assets/project-03.svg",
-  //   images: ["assets/project-03.svg"],
-  // },
-  // {
-  //   id: 3,
-  //   featured: true,
-  //   title: "기업 팜플렛&브로슈어",
-  //   category: "PRINT DESIGN",
-  //   year: "2026",
-  //   role: "Pamphlet / Brochure",
-  //   description:
-  //     "사용자의 흐름과 브랜드의 목적을 연결하는 웹 경험 디자인입니다.",
-  //   cover: "assets/project-02.svg",
-  //   images: ["assets/project-02.svg"],
-  // },
-  // {
-  //   id: 4,
-  //   featured: true,
-  //   title: "식품 브랜드 로고제작",
-  //   category: "BRAND IDENTITY",
-  //   year: "2025",
-  //   role: "LOGO DESIGN",
-  //   description:
-  //     "식품 브랜드를 론칭하여 로고를 제작하였습니다",
-  //   cover: "assets/project-04.svg",
-  //   images: ["assets/project-04.svg"],
-  // },
+  {
+    id: 2,
+    featured: false,
+    title: "우동 포차 메뉴판",
+    category: "PRINT DESIGN",
+    year: "2026",
+    role: "Restaurant business / MENU",
+    description:
+      "빠싹우동의 브랜드 콘셉트와 메뉴 특성을 반영하여 가독성과 시각적 완성도를 높인 메뉴판 디자인을 진행하였습니다.",
+    cover: "assets/print2/SUM.jpg",
+    images: ["assets/print2/BBASSAK_01.jpg"],
+  },
+  {
+    id: 3,
+    featured: false,
+    title: "레디큐 증정이벤트 X배너",
+    category: "PRINT DESIGN",
+    year: "2026",
+    role: "X-BANNER EVENT",
+    description:
+      "숙취해소제 레디큐 증정 이벤트로 비치용 X배너를 제작하였습니다.",
+    cover: "assets/print3/SUM.jpg",
+    images: ["assets/print3/READYq_01.jpg", "assets/print3/READYq_02.jpg"]
+  },
+  {
+    id: 4,
+    featured: false,
+    title: "기업 팜플렛&브로슈어",
+    category: "PRINT DESIGN",
+    year: "2026",
+    role: "Pamphlet / Brochure",
+    description:
+      "기업의 기술력과 제품력을 반영하여 정보를 명확하고 체계적으로 전달하도록 팜플렛 및 브로슈어를 제작하였습니다.",
+    cover: "assets/print4/SUM.jpg",
+    images: Array.from({ length: 7 }, (_, i) => {
+      const num = i + 1;
+      const fileName = String(num).padStart(2, "0");
+      const gifNumbers = [];
+      const ext = gifNumbers.includes(num) ? "gif" : "jpg";
+      return `assets/print4/bridge_${fileName}.${ext}`;
+    }),
+  },
   {
     id: 5,
     featured: false,
@@ -151,23 +157,35 @@ const PROJECTS = [
       return `assets/detail09/VISMITH_${fileName}.${ext}`;
     }),
   },
+  {
+    id: 10,
+    featured: false,
+    title: "침구류\n상세페이지",
+    category: "DETAIL PAGE",
+    year: "2026",
+    role: "Brand & Product renewal",
+    description:
+      "브랜드 아이덴티티 강화를 위하여 제품의 특징을 살려 포근한 무드로 상세페이지 리뉴얼을 진행하였습니다.",
+    cover: "assets/detail10/SUM.jpg",
+    images: Array.from({ length: 3 }, (_, i) => {
+      const num = i + 1;
+      const fileName = String(num).padStart(2, "0");
+      const gifNumbers = [];
+      const ext = gifNumbers.includes(num) ? "gif" : "jpg";
+      return `assets/detail10/CHNEL_${fileName}.${ext}`;
+    }),
+  },
   // {
-  //   id: 10,
-  //   featured: true,
-  //   title: "남성속옷 광고소재 모음",
-  //   category: "DIGITAL CONTENTS",
+  //   id: 11,
+  //   featured: false,
+  //   title: "식품 브랜드 로고제작",
+  //   category: "BRAND IDENTITY",
   //   year: "2025",
-  //   role: "SNS META",
+  //   role: "LOGO DESIGN",
   //   description:
-  //     "남성 속옷 메타소재 제작 모음입니다",
+  //     "식품 브랜드를 론칭하여 로고를 제작하였습니다",
   //   cover: "assets/project-04.svg",
-  //   images: Array.from({ length: 3 }, (_, i) => {
-  //     const num = i + 1;
-  //     const fileName = String(num).padStart(2, "0");
-  //     const gifNumbers = [];
-  //     const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-  //     return `assets/detail09/VISMITH_${fileName}.${ext}`;
-  //   }),
+  //   images: ["assets/project-04.svg"],
   // },
 ];
 
