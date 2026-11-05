@@ -22,55 +22,55 @@ const PROJECTS = [
     role: "New Product Launch",
     description:
       "여성 언더웨어 시장에서 '여성 건강과 통풍'이라는 명확한 차별점을 데이터 기반으로 시각화했습니다.",
-    cover: "assets/detail01/SUM01.jpg",
+    cover: "assets/01_detail/SUM01.jpg",
     images: Array.from({ length: 24 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [2, 4, 7, 9, 11, 13, 16, 18, 20];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/detail01/SKAB_${fileName}.${ext}`;
+      return `assets/01_detail/SKAB_${fileName}.${ext}`;
     }),
   },
   {
     id: 2,
     featured: false,
-    title: "우동 포차 메뉴판",
+    title: "우동 포차\n메뉴판",
     category: "PRINT DESIGN",
     year: "2026",
     role: "Restaurant business / MENU",
     description:
       "빠싹우동의 브랜드 콘셉트와 메뉴 특성을 반영하여 가독성과 시각적 완성도를 높인 메뉴판 디자인을 진행하였습니다.",
-    cover: "assets/print2/SUM.jpg",
-    images: ["assets/print2/BBASSAK_01.jpg"],
+    cover: "assets/02_print/SUM.jpg",
+    images: ["assets/02_print/BBASSAK_01.jpg"],
   },
   {
     id: 3,
     featured: false,
-    title: "레디큐 증정이벤트 X배너",
+    title: "레디큐 증정이벤트\nX배너",
     category: "PRINT DESIGN",
     year: "2026",
     role: "X-BANNER EVENT",
     description:
       "숙취해소제 레디큐 증정 이벤트로 비치용 X배너를 제작하였습니다.",
-    cover: "assets/print3/SUM.jpg",
-    images: ["assets/print3/READYq_01.jpg", "assets/print3/READYq_02.jpg"]
+    cover: "assets/03_print/SUM.jpg",
+    images: ["assets/03_print/READYq_01.jpg", "assets/03_print/READYq_02.jpg"]
   },
   {
     id: 4,
     featured: false,
-    title: "기업 팜플렛&브로슈어",
+    title: "수소 기업\n팜플렛&브로슈어",
     category: "PRINT DESIGN",
     year: "2026",
     role: "Pamphlet / Brochure",
     description:
       "기업의 기술력과 제품력을 반영하여 정보를 명확하고 체계적으로 전달하도록 팜플렛 및 브로슈어를 제작하였습니다.",
-    cover: "assets/print4/SUM.jpg",
+    cover: "assets/04_print/SUM.jpg",
     images: Array.from({ length: 7 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/print4/bridge_${fileName}.${ext}`;
+      return `assets/04_print/bridge_${fileName}.${ext}`;
     }),
   },
   {
@@ -82,13 +82,13 @@ const PROJECTS = [
     role: "New Product Launch",
     description:
       "제품의 기술력을 이미지 및 인포그래픽으로 전달하고 구매 전환율을 높이는 것을 목표로 기획했습니다",
-    cover: "assets/detail05/SUM.jpg",
-    images: Array.from({ length: 24 }, (_, i) => {
+    cover: "assets/05_detail/SUM.jpg",
+    images: Array.from({ length: 17 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [5, 9, 11, 13];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/detail05/SKDH_${fileName}.${ext}`;
+      return `assets/05_detail/SKDH_${fileName}.${ext}`;
     }),
   },
   {
@@ -100,13 +100,13 @@ const PROJECTS = [
     role: "Starter Package",
     description:
       "메인 제품 3가지를 함께 입어볼 수 있는 스타터 패키지 상세페이지를 개별로 진행했습니다",
-    cover: "assets/detail06/SUM.jpg",
+    cover: "assets/06_detail/SUM.jpg",
     images: Array.from({ length: 18 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [7, 9, 11, 13, 15, 17];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/detail06/SK-START_${fileName}.${ext}`;
+      return `assets/06_detail/SK-START_${fileName}.${ext}`;
     }),
   },
   {
@@ -118,13 +118,13 @@ const PROJECTS = [
     role: "New Product Launch",
     description:
       "단순한 반려식물 판매를 넘어, 독창적인 성격을 가진 캐릭터 세계관을 부여하여 감성적인 가치를 전달하고 구매 전환율을 높이는 상세페이지 설계",
-    cover: "assets/detail07/SUM.jpg",
+    cover: "assets/07_detail/SUM.jpg",
     images: Array.from({ length: 4 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [2];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/detail07/F-marimo_${fileName}.${ext}`;
+      return `assets/07_detail/F-marimo_${fileName}.${ext}`;
     }),
   },
   {
@@ -136,8 +136,8 @@ const PROJECTS = [
     role: "Plastic Surgery",
     description:
       "성형외과 마케팅을 위해 인기 시술인 리투오의 강남언니용 상세페이지를 제작하였습니다.",
-    cover: "assets/detail08/SUM.jpg",
-    images: ["assets/detail08/RE2O_01.jpg"],
+    cover: "assets/08_detail/SUM.jpg",
+    images: ["assets/08_detail/RE2O_01.jpg"],
   },
   {
     id: 9,
@@ -148,13 +148,13 @@ const PROJECTS = [
     role: "Brand & Product renewal",
     description:
       "안경 브랜드 아이덴티티 강화를 위하여 제품 업그레이드를 진행하여 상세페이지 리뉴얼을 진행하였습니다.",
-    cover: "assets/detail09/SUM.jpg",
+    cover: "assets/09_detail/SUM.jpg",
     images: Array.from({ length: 3 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/detail09/VISMITH_${fileName}.${ext}`;
+      return `assets/09_detail/VISMITH_${fileName}.${ext}`;
     }),
   },
   {
@@ -166,27 +166,69 @@ const PROJECTS = [
     role: "Brand & Product renewal",
     description:
       "브랜드 아이덴티티 강화를 위하여 제품의 특징을 살려 포근한 무드로 상세페이지 리뉴얼을 진행하였습니다.",
-    cover: "assets/detail10/SUM.jpg",
+    cover: "assets/10_detail/SUM.jpg",
     images: Array.from({ length: 3 }, (_, i) => {
       const num = i + 1;
       const fileName = String(num).padStart(2, "0");
       const gifNumbers = [];
       const ext = gifNumbers.includes(num) ? "gif" : "jpg";
-      return `assets/detail10/CHNEL_${fileName}.${ext}`;
+      return `assets/10_detail/CHNEL_${fileName}.${ext}`;
     }),
   },
-  // {
-  //   id: 11,
-  //   featured: false,
-  //   title: "식품 브랜드 로고제작",
-  //   category: "BRAND IDENTITY",
-  //   year: "2025",
-  //   role: "LOGO DESIGN",
-  //   description:
-  //     "식품 브랜드를 론칭하여 로고를 제작하였습니다",
-  //   cover: "assets/project-04.svg",
-  //   images: ["assets/project-04.svg"],
-  // },
+  {
+    id: 11,
+    featured: false,
+    title: "마리모 브랜드\n캐릭터 디자인",
+    category: "BRAND IDENTITY",
+    year: "2025",
+    role: "CHARACTER DESIGN",
+    description:
+      "브랜드의 가치와 정서식물 콘셉트를 반영하여 각 캐릭터에 고유한 성격과 개성을 부여하고, 친근하고 사랑스러운 이미지로 리뉴얼하였습니다.",
+    cover: "assets/11_brand/SUM.jpg",
+    images: Array.from({ length: 6 }, (_, i) => {
+      const num = i + 1;
+      const fileName = String(num).padStart(2, "0");
+      const gifNumbers = [];
+      const ext = gifNumbers.includes(num) ? "gif" : "jpg";
+      return `assets/11_brand/ChMarimo_${fileName}.${ext}`;
+    }),
+  },
+  {
+    id: 12,
+    featured: false,
+    title: "속옷 브랜드\nSNS 메타소재",
+    category: "DIGITAL CONTENTS",
+    year: "2026",
+    role: "SNS META",
+    description:
+      "다양한 언더웨어 제품군별 특장점과 브랜드 아이덴티티를 반영하여 메타 SNS 광고 소재를 제작하였습니다.",
+    cover: "assets/12_digital/SUM.jpg",
+    images: Array.from({ length: 20 }, (_, i) => {
+      const num = i + 1;
+      const fileName = String(num).padStart(2, "0");
+      const gifNumbers = [];
+      const ext = gifNumbers.includes(num) ? "gif" : "jpg";
+      return `assets/12_digital/mogSNS_${fileName}.${ext}`;
+    }),
+  },
+  {
+    id: 13,
+    featured: false,
+    title: "기초화장품 브랜드\nSNS 메타소재",
+    category: "DIGITAL CONTENTS",
+    year: "2026",
+    role: "SNS META",
+    description:
+      "다양한 스킨케어 제품군별 특장점과 브랜드 아이덴티티를 반영하여 메타 SNS 광고 소재를 제작하였습니다.",
+    cover: "assets/13_digital/SUM.jpg",
+    images: Array.from({ length: 14 }, (_, i) => {
+      const num = i + 1;
+      const fileName = String(num).padStart(2, "0");
+      const gifNumbers = [];
+      const ext = gifNumbers.includes(num) ? "gif" : "jpg";
+      return `assets/13_digital/ziztag_${fileName}.${ext}`;
+    }),
+  },
 ];
 
 

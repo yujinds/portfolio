@@ -57,14 +57,23 @@ if (filters)
     });
     renderProjects(b.dataset.filter);
   });
+
 function openProject(p) {
   body.replaceChildren();
+
+  // DIGITAL CONTENTS 카테고리만 구분
+  body.classList.toggle(
+    "digital-contents",
+    p.category === "DIGITAL CONTENTS"
+  );
+
   body.append(
     makeEl("p", "eyebrow", `${p.category.toUpperCase()} / ${p.year}`),
     makeEl("h2", "", p.title),
     makeEl("div", "detail-meta", p.role),
     makeEl("p", "", p.description),
   );
+
   p.images.forEach((src) => {
     const img = document.createElement("img");
     img.src = src;
@@ -72,8 +81,10 @@ function openProject(p) {
     img.loading = "lazy";
     body.append(img);
   });
+
   dialog.showModal();
 }
+
 document
   .getElementById("closeProject")
   .addEventListener("click", () => dialog.close());

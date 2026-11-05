@@ -11,6 +11,14 @@
 * {
   box-sizing: border-box;
 }
+
+
+/* DIGITAL CONTENTS 이미지 사이 여백 , GPT로 추가함*/
+#projectDialogBody.digital-contents img + img {
+  margin-top: 20px;
+}
+
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 85px;
